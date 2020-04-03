@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appportaisdesafio1">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        //para aparecer a opção de voltar no canto superior da tela, entre o WebViewActivity/MainActivity
+        <activity android:name=".WebViewActivity" android:parentActivityName=".MainActivity"></activity>
+        //para aparecer a opção de voltar no canto superior da tela, entre a TelaNomeActivity/MainActivity
+        <activity android:name=".TelaNomeActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

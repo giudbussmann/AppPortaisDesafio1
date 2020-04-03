@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btSobre"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="onSobre"
+        android:text="sobre"
+        android:textAlignment="center"
+        android:textColor="#FFDE3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImMercadoLivre" />
+
+    <ImageView
+        android:id="@+id/ImBuscape"
+        android:layout_width="310dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImEbay"
+        app:srcCompat="@drawable/busape3" />
+
+    <ImageView
+        android:id="@+id/ImSubmarino"
+        android:layout_width="310dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImBuscape"
+        app:srcCompat="@drawable/submarino3" />
+
+    <ImageView
+        android:id="@+id/ImMercadoLivre"
+        android:layout_width="310dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImSubmarino"
+        app:srcCompat="@drawable/mercadolivre3" />
+
+    <ImageView
+        android:id="@+id/ImEbay"
+        android:layout_width="310dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ebay3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
